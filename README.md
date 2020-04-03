@@ -15,12 +15,18 @@ create the following database structure:
 
 Our client has decided that the history app we're building them should have a
 special focus on historical figures. For this reason, it is through figure views
-and controllers that most of the magic of our app will happen. Our app will have
-view pages for all of the landmarks and a user will be able to create new
-landmarks.
+and controllers that most of the magic of our app will happen. 
 
-However, when a user creates or edits a _figure_, they should also be able
-to select or create a new landmark and/or title to associate to that figure. In
+
+<!-- 1.-Our app will have
+view pages for all of the landmarks 
+2.-a user will be able to create new
+landmarks. -->
+
+<!-- 3.-user creates or edits a _figure_
+ they should also be able
+to select or create a new landmark and/or title to associate to that figure.  -->
+In
 other words, the form for a new figure and the form to edit a figure should
 allow the user to select from existing landmarks and title _and_ create new
 landmarks and titles to associate to the figure. Our client doesn't really care
@@ -111,7 +117,7 @@ respectively. Keep playing around from there however you like.
 
 ##### Test Database Migration
 
-**Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`**
+**Make sure to migrate your test database by running `rake db:migrate SINATRA_ENV=test`*
 
 ##### Seed data
 

@@ -1,0 +1,23 @@
+<h2>Edit Figure </h2>
+<form method="POST" action="/figures">
+    <input id="hidden" type="hidden" name="_method" value="PATCH">
+    <div>
+     <select name="landmark_name">
+        <% @landmarks.each do |landmark|%>
+        <option value = "<% landmark.id %>">
+            <%= landmark.name %>
+        </option>
+            <%end%>
+     </select>
+
+    <h2> Create New Landmark:</h2>
+    Name: <input type="text" name="landmark_name"><br>
+    Years: <input type="text" name="years_completed"><br>
+
+
+    <input type="submit">
+    </div>
+            
+
+
+</form>
